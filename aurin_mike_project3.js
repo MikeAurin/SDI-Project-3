@@ -42,11 +42,8 @@ prompt === myTourist
 myTourist = "Tom Brady";
 
 console.log("Today is the day that " + myTourist + " visits " + thePark);
+console.log("Tom wants to go on " + rides[0] + ", " + rides[1] + ", " + rides[2] + "," + " and " + rides[3] + "."); 
 
-console.log ("The wait is too long for " + rides[0] + "!");
-console.log("The line isn't too bad for " + rides[1] + ".");
-console.log("The line for " + rides[2] + " is ridiculous!");
-console.log("I'll wait in line for " + rides[3] + ".");
 
 
 
@@ -62,23 +59,12 @@ if (bradyMoney >= 20) {
 	console.log("I should've gone to Disney World!");
 };
 
-var waitingInLine = function(checkFacebook) {
-if (waitingInLine === 30)
-	while (waitingInLine > 20) {
-	
-		console.log("This line isn't moving!");
-		waitingInLine = waitingInLine - 5;
-	
-		
-	};
-
-	return checkFacebook;
-
-};
-
-
-
-
+/*
+console.log ("The wait is too long for " + rides[0] + "!");
+console.log("The line isn't too bad for " + rides[1] + ".");
+console.log("The line for " + rides[2] + " is ridiculous!");
+console.log("I'll wait in line for " + rides[3] + ".");
+*/
 
 
 
