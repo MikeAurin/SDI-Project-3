@@ -42,10 +42,31 @@ prompt === myTourist
 myTourist = "Tom Brady";
 
 console.log("Today is the day that " + myTourist + " visits " + thePark);
-console.log("Tom wants to go on " + rides[0] + ", " + rides[1] + ", " + rides[2] + "," + " and " + rides[3] + "."); 
+console.log(myTourist + " wants to go on " + rides[0] + ", " + rides[1] + ", " + rides[2] + ", and " + rides[3] + ".");
+console.log(myTourist + " will not wait more 30 minutes or more for a ride.");
 
+var doesTomRide = function() {
 
+	for (var i = 0; i < rides.length; i++) {
+	// Will run until i is less than the length of the myCars array
+	
+		if (rides[i] === "The Mummy") {
+		console.log(rides[i] + " has too long of a wait for " + myTourist + ".");
+	};
+		if (rides[i] === "Twister") {
+		console.log(myTourist + " will wait in line for " + rides[i] + ".");
+	};
+		if (rides[i] === "Jaws") {
+		console.log(myTourist + " thinks this line is too long for a ride that doesn't exist anymore!");
+	};
+		if(rides[i] === "Shrek") {
+		console.log(myTourist + " will wait in line to see Shrek.");	
+	};
+	};
+	
+};
 
+doesTomRide();
 
 if (getSouvenir === true) {
 	console.log(myTourist + " wants an awesome " + thePark + " jacket!");
@@ -57,7 +78,7 @@ if (bradyMoney >= 20) {
 	};
 } else {
 	console.log("I should've gone to Disney World!");
-};
+	};
 
 /*
 console.log ("The wait is too long for " + rides[0] + "!");
@@ -65,7 +86,3 @@ console.log("The line isn't too bad for " + rides[1] + ".");
 console.log("The line for " + rides[2] + " is ridiculous!");
 console.log("I'll wait in line for " + rides[3] + ".");
 */
-
-
-
-
