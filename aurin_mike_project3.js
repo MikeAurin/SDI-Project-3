@@ -29,6 +29,7 @@ var thePark = "Universal Studios";
 var getSouvenir = true;
 var bradyMoney = 30;
 var doesTomRide;
+var bradyBunch;
 
 prompt("Who is the Greatest Quarterback ever?");
 if (prompt === "Tom Brady") {
@@ -41,7 +42,7 @@ alert("I knew I liked you!");
 prompt === myTourist
 myTourist = "Tom Brady";
 
-console.log("Today is the day that " + myTourist + " visits " + thePark);
+console.log("Today is the day that " + myTourist + " and his family visits " + thePark);
 console.log(myTourist + " wants to go on " + rides[0] + ", " + rides[1] + ", " + rides[2] + ", and " + rides[3] + ".");
 console.log(myTourist + " will not wait more 30 minutes or more for a ride.");
 
@@ -68,6 +69,34 @@ var doesTomRide = function() {
 
 doesTomRide();
 
+bradyBunch = {
+
+	"kids": [
+		
+		{
+			"firstName": "Zach",
+			"age": 12,
+			"hungry": true
+		},
+		{
+			"firstName": "Alexa",
+			"age": 9,
+			"hungry": true
+		}
+	],
+};
+console.log(bradyBunch.kids);
+
+	for (var key in bradyBunch.kids){
+		
+		for(var newKey in bradyBunch.kids[key]){
+			if(newKey === "hungry") {
+			console.log("It is " + bradyBunch.kids[key][newKey] + " that the kids are hungry.");
+			
+		};
+	};
+};
+
 if (getSouvenir === true) {
 	console.log(myTourist + " wants an awesome " + thePark + " jacket!");
 	if (bradyMoney <= 40 ) {
@@ -80,9 +109,3 @@ if (bradyMoney >= 20) {
 	console.log("I should've gone to Disney World!");
 	};
 
-/*
-console.log ("The wait is too long for " + rides[0] + "!");
-console.log("The line isn't too bad for " + rides[1] + ".");
-console.log("The line for " + rides[2] + " is ridiculous!");
-console.log("I'll wait in line for " + rides[3] + ".");
-*/
