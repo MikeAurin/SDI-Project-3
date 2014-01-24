@@ -27,7 +27,7 @@ var rides = ["The Mummy", "Twister", "Jaws", "Shrek"]
 var waitTimes= [40, 20, 30, 10];
 var thePark = "Universal Studios";
 var getSouvenir = true;
-var bradyMoney;
+var bradyMoney = 40;
 var doesTomRide;
 var bradyBunch;
 var minutesInLine;
@@ -143,6 +143,6 @@ bradyMoney = bradyMoney - 20;
 	return bradyMoney; 
 	
 };
-return bradyMoney;
+
 console.log("After visiting the gift shop, Tom Brady has " + bradyMoney + " dollars left over.");
 
