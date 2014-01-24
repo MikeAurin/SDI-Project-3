@@ -27,9 +27,11 @@ var rides = ["The Mummy", "Twister", "Jaws", "Shrek"]
 var waitTimes= [40, 20, 30, 10];
 var thePark = "Universal Studios";
 var getSouvenir = true;
-var bradyMoney = 30;
+var bradyMoney;
 var doesTomRide;
 var bradyBunch;
+var minutesInLine;
+var souvenir;
 
 prompt("Who is the Greatest Quarterback ever?");
 if (prompt === "Tom Brady") {
@@ -49,20 +51,31 @@ console.log(myTourist + " will not wait more 30 minutes or more for a ride.");
 var doesTomRide = function() {
 
 	for (var i = 0; i < rides.length; i++) {
-	// Will run until i is less than the length of the myCars array
 	
 		if (rides[i] === "The Mummy") {
 		console.log(rides[i] + " has too long of a wait for " + myTourist + ".");
 	};
 		if (rides[i] === "Twister") {
 		console.log(myTourist + " will wait in line for " + rides[i] + ".");
+		minutesInLine = 20;
+		while (minutesInLine > 0) {
+	console.log("Only " + minutesInLine + " minutes left.  Time to check Facebook.");
+	minutesInLine = minutesInLine - 5; 
 	};
+};
+console.log("Yay, we're at the front of the line!");
 		if (rides[i] === "Jaws") {
 		console.log(myTourist + " thinks this line is too long for a ride that doesn't exist anymore!");
 	};
 		if(rides[i] === "Shrek") {
 		console.log(myTourist + " will wait in line to see Shrek.");	
-	};
+		minutesInLine = 10;
+		while (minutesInLine > 0) {
+	console.log("Only " + minutesInLine + " minutes left.  Time to check Facebook.");
+	minutesInLine = minutesInLine - 5; 
+// I understand the Facebook loop is a little ridiculous, started off as an experiment and resulted in a somewhat accurate joke.			
+			};
+		};
 	};
 	
 };
@@ -97,6 +110,17 @@ console.log(bradyBunch.kids);
 	};
 };
 
+
+while (minutesInLine > 0) {
+	console.log("It's been " + minutesInLine + " minutes.  Time to check Facebook");
+	minutesInLine - 5; 
+
+};
+
+console.log("It's about time to start heading home!");
+
+
+
 if (getSouvenir === true) {
 	console.log(myTourist + " wants an awesome " + thePark + " jacket!");
 	if (bradyMoney <= 40 ) {
@@ -108,4 +132,17 @@ if (bradyMoney >= 20) {
 } else {
 	console.log("I should've gone to Disney World!");
 	};
+
+
+
+souvenir = function(souvenir) {
+
+bradyMoney = 40;
+bradyMoney = bradyMoney - 20;
+	
+	return bradyMoney; 
+	
+};
+return bradyMoney;
+console.log("After visiting the gift shop, Tom Brady has " + bradyMoney + " dollars left over.");
 
